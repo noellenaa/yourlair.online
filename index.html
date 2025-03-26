@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FNQXR4TE8Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FNQXR4TE8Q');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T12RSVRG7Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-T12RSVRG7Z');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster Survivors - Epic Survival Action Game</title>
-    <meta name="description" content="Play Monster Survivors online - An intense survival action game where you fight endless waves of monsters using powerful abilities and strategic gameplay.">
+    <title>YourLair - Online Game Portal</title>
+    <meta name="description" content="Play the best free online games at YourLair - featuring action, survival, puzzle, and adventure games for all players.">
     <link rel="canonical" href="https://yourlair.online" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -32,41 +31,176 @@
             height: 100%;
             border: none;
         }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
+    <nav class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">YourLair</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-gray-300">Home</a>
+                <a href="categories.html" class="hover:text-gray-300">Categories</a>
+                <a href="popular.html" class="hover:text-gray-300">Popular</a>
+                <a href="new.html" class="hover:text-gray-300">New Games</a>
+                <a href="about.html" class="hover:text-gray-300">About</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div class="md:hidden hidden px-4 py-2 bg-gray-800" id="mobile-menu">
+            <a href="index.html" class="block py-2">Home</a>
+            <a href="categories.html" class="block py-2">Categories</a>
+            <a href="popular.html" class="block py-2">Popular</a>
+            <a href="new.html" class="block py-2">New Games</a>
+            <a href="about.html" class="block py-2">About</a>
+        </div>
+    </nav>
+
     <div class="container mx-auto px-4 py-8 max-w-6xl">
-        <header class="text-center mb-8">
-            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Monster Survivors</h1>
-            <p class="text-xl text-gray-600 mb-8">Survive endless waves of monsters in this thrilling action-packed adventure!</p>
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">YourLair Games</h1>
+            <p class="text-xl text-gray-600">Play amazing free online games!</p>
         </header>
 
         <main>
-            <div class="game-container mb-12 rounded-lg shadow-lg overflow-hidden">
-                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" allowfullscreen></iframe>
-            </div>
+            <!-- Featured Game Section -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Featured Game</h2>
+                <div class="game-container mb-4 rounded-lg shadow-lg overflow-hidden">
+                    <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" allowfullscreen></iframe>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Monster Survivors</h3>
+                <p class="text-gray-600 mb-4">Survive endless waves of monsters in this thrilling action-packed adventure!</p>
+                <a href="games/monster-survivors.html" class="inline-block bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition">Play Full Screen</a>
+            </section>
 
-            <article class="prose lg:prose-xl mx-auto">
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Game Overview</h2>
-                <p class="mb-6">Monster Survivors is an intense survival action game where your skills and strategy determine how long you can last against increasingly challenging waves of monsters. Choose your abilities wisely and upgrade your character to become stronger as you face tougher enemies.</p>
+            <!-- Game Categories Section -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Game Categories</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <a href="categories/action.html" class="block p-6 bg-gray-100 rounded-lg text-center hover:bg-gray-200 transition">
+                        <h3 class="text-xl font-bold">Action</h3>
+                        <p class="text-gray-600">Fast-paced games with intense gameplay</p>
+                    </a>
+                    <a href="categories/puzzle.html" class="block p-6 bg-gray-100 rounded-lg text-center hover:bg-gray-200 transition">
+                        <h3 class="text-xl font-bold">Puzzle</h3>
+                        <p class="text-gray-600">Challenge your brain with puzzling games</p>
+                    </a>
+                    <a href="categories/adventure.html" class="block p-6 bg-gray-100 rounded-lg text-center hover:bg-gray-200 transition">
+                        <h3 class="text-xl font-bold">Adventure</h3>
+                        <p class="text-gray-600">Embark on epic journeys and stories</p>
+                    </a>
+                    <a href="categories/strategy.html" class="block p-6 bg-gray-100 rounded-lg text-center hover:bg-gray-200 transition">
+                        <h3 class="text-xl font-bold">Strategy</h3>
+                        <p class="text-gray-600">Plan, think, and outwit your opponents</p>
+                    </a>
+                </div>
+            </section>
 
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">Key Features</h2>
-                <ul class="list-disc pl-6 mb-6">
-                    <li>Endless survival gameplay</li>
-                    <li>Multiple character abilities</li>
-                    <li>Progressive difficulty system</li>
-                    <li>Strategic upgrade choices</li>
-                    <li>Various monster types</li>
-                </ul>
+            <!-- Popular Games Section -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Popular Games</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Game Card 1 -->
+                    <div class="game-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                        <a href="games/monster-survivors.html">
+                            <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                                <img src="images/game-thumbnails/monster-survivors.jpg" alt="Monster Survivors" class="object-cover w-full h-48">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-1">Monster Survivors</h3>
+                                <p class="text-sm text-gray-600">Action, Survival</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Additional game cards will go here -->
+                    <!-- Game Card placeholder 2 -->
+                    <div class="game-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                        <a href="games/puzzle-master.html">
+                            <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                                <img src="path/to/puzzle-master-thumbnail.jpg" alt="Puzzle Master" class="object-cover w-full h-48">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-1">Puzzle Master</h3>
+                                <p class="text-sm text-gray-600">Puzzle, Brain Games</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Game Card placeholder 3 -->
+                    <div class="game-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                        <a href="games/space-adventure.html">
+                            <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                                <img src="path/to/space-adventure-thumbnail.jpg" alt="Space Adventure" class="object-cover w-full h-48">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-1">Space Adventure</h3>
+                                <p class="text-sm text-gray-600">Adventure, Arcade</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="popular.html" class="inline-block bg-gray-900 text-white py-2 px-6 rounded-lg hover:bg-gray-800 transition">View All Popular Games</a>
+                </div>
+            </section>
 
-                <h2 class="text-2xl font-bold text-gray-900 mb-4">How to Play</h2>
-                <p class="mb-6">Use WASD or arrow keys to move your character. Survive as long as possible while collecting experience points to level up and choose new abilities. Defeat monsters to earn points and try to achieve the highest score possible!</p>
-            </article>
+            <!-- New Games Section -->
+            <section class="mb-16">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">New Games</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- New games will go here -->
+                    <!-- New Game placeholder 1 -->
+                    <div class="game-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                        <a href="games/racing-fury.html">
+                            <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                                <img src="path/to/racing-fury-thumbnail.jpg" alt="Racing Fury" class="object-cover w-full h-48">
+                            </div>
+                            <div class="p-4">
+                                <h3 class="text-xl font-bold text-gray-900 mb-1">Racing Fury</h3>
+                                <p class="text-sm text-gray-600">Racing, Action</p>
+                                <div class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded mt-2 inline-block">New</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Add more new game placeholders here -->
+                </div>
+                <div class="text-center mt-8">
+                    <a href="new.html" class="inline-block bg-gray-900 text-white py-2 px-6 rounded-lg hover:bg-gray-800 transition">View All New Games</a>
+                </div>
+            </section>
         </main>
 
-        <footer class="text-center mt-12 text-gray-600">
-            <p>© 2024 Monster Survivors. All rights reserved.</p>
+        <footer class="text-center mt-12 py-8 border-t border-gray-200">
+            <div class="flex flex-col md:flex-row justify-center md:justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-600">© 2024 YourLair. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="about.html" class="text-gray-600 hover:text-gray-900">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-gray-900">Contact</a>
+                    <a href="privacy.html" class="text-gray-600 hover:text-gray-900">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-600 hover:text-gray-900">Terms of Service</a>
+                </div>
+            </div>
         </footer>
     </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
-</html> 
+</html>
