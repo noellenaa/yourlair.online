@@ -1,0 +1,244 @@
+[INFO][2025-03-29T11:07:26.258Z] 开始抓取CrazyGames游戏数据
+[INFO][2025-03-29T11:07:26.612Z] 访问游戏列表页面: https://www.crazygames.com/games
+[INFO][2025-03-29T11:07:54.715Z] 滚动页面加载更多游戏...
+[INFO][2025-03-29T11:07:59.727Z] 找到 20 个游戏链接
+[INFO][2025-03-29T11:07:59.728Z] 处理游戏 1/20: https://www.crazygames.com/game/bloxdhop-io
+[INFO][2025-03-29T11:08:12.835Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:08:16.881Z] 处理游戏 2/20: https://www.crazygames.com/game/ragdoll-archers
+[INFO][2025-03-29T11:08:28.027Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:08:32.082Z] 处理游戏 3/20: https://www.crazygames.com/game/mahjongg-solitaire
+[INFO][2025-03-29T11:08:42.423Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:08:46.461Z] 处理游戏 4/20: https://www.crazygames.com/game/words-of-wonders
+[INFO][2025-03-29T11:08:55.490Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:08:59.546Z] 处理游戏 5/20: https://www.crazygames.com/game/count-masters-stickman-games
+[INFO][2025-03-29T11:09:09.501Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:09:13.543Z] 已保存 5 个游戏数据
+[INFO][2025-03-29T11:09:13.544Z] 处理游戏 6/20: https://www.crazygames.com/game/8-ball-billiards-classic
+[INFO][2025-03-29T11:09:22.944Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:09:26.992Z] 处理游戏 7/20: https://www.crazygames.com/game/solar-smash
+[INFO][2025-03-29T11:09:34.651Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:09:38.691Z] 处理游戏 8/20: https://www.crazygames.com/game/slice-master
+[INFO][2025-03-29T11:09:47.944Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:09:51.986Z] 处理游戏 9/20: https://www.crazygames.com/game/farm-merge-valley
+[INFO][2025-03-29T11:10:00.818Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:10:04.860Z] 处理游戏 10/20: https://www.crazygames.com/game/hazmob-fps-online-shooter
+[INFO][2025-03-29T11:10:13.175Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:10:17.217Z] 已保存 10 个游戏数据
+[INFO][2025-03-29T11:10:17.218Z] 处理游戏 11/20: https://www.crazygames.com/game/supermarket-simulator-cashier-game
+[INFO][2025-03-29T11:10:25.000Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:10:29.049Z] 处理游戏 12/20: https://www.crazygames.com/game/mergest-kingdom
+[INFO][2025-03-29T11:10:36.573Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:10:40.626Z] 处理游戏 13/20: https://www.crazygames.com/game/buildnow-gg
+[INFO][2025-03-29T11:10:50.815Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:10:54.851Z] 处理游戏 14/20: https://www.crazygames.com/game/tower-swap
+[INFO][2025-03-29T11:11:03.511Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:11:07.560Z] 处理游戏 15/20: https://www.crazygames.com/game/hexa-sort
+[INFO][2025-03-29T11:11:15.634Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:11:19.683Z] 已保存 15 个游戏数据
+[INFO][2025-03-29T11:11:19.684Z] 处理游戏 16/20: https://www.crazygames.com/game/traffic-rider-vvq
+[INFO][2025-03-29T11:11:28.635Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:11:32.751Z] 处理游戏 17/20: https://www.crazygames.com/game/rpg-idle-clicker-uzz
+[INFO][2025-03-29T11:11:40.743Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:11:44.776Z] 处理游戏 18/20: https://www.crazygames.com/game/ragdoll-break
+[INFO][2025-03-29T11:11:53.385Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:11:57.450Z] 处理游戏 19/20: https://www.crazygames.com/game/idle-saga
+[INFO][2025-03-29T11:12:10.375Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:12:14.433Z] 处理游戏 20/20: https://www.crazygames.com/game/empire-clicker
+[INFO][2025-03-29T11:12:25.223Z]   尝试点击Embed按钮...
+[INFO][2025-03-29T11:12:29.265Z] 已保存 20 个游戏数据
+[INFO][2025-03-29T11:12:29.266Z] 完成! 已抓取 20 个游戏，结果保存到 data/crazygames-list.json
+[INFO][2025-03-29T11:12:29.267Z] 请使用筛选工具来选择要导入的游戏
+[INFO][2025-03-29T11:29:19.912Z] 开始抓取CrazyGames游戏数据
+[INFO][2025-03-29T11:29:20.256Z] 访问游戏列表页面: https://www.crazygames.com/games
+[INFO][2025-03-29T11:29:38.789Z] 滚动页面加载更多游戏...
+[INFO][2025-03-29T11:29:43.805Z] 找到 20 个游戏链接
+[INFO][2025-03-29T11:29:43.806Z] 处理游戏 1/20: https://www.crazygames.com/game/bloxdhop-io
+[ERROR][2025-03-29T11:29:53.281Z] 处理游戏时出错: https://www.crazygames.com/game/bloxdhop-io
+DOMException: Failed to execute 'querySelector' on 'Document': 'button:has-text("Embed")' is not a valid selector.
+    at evaluate (evaluate at main (D:\projects\游戏站\yourlair.online\yourlair-importer\crazygames-crawler.js:174:45), <anonymous>:12:36)
+    at #evaluate (D:\projects\游戏站\yourlair.online\yourlair-importer\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\ExecutionContext.js:222:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ExecutionContext.evaluate (D:\projects\游戏站\yourlair.online\yourlair-importer\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\ExecutionContext.js:117:16)
+    at async IsolatedWorld.evaluate (D:\projects\游戏站\yourlair.online\yourlair-importer\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\IsolatedWorld.js:124:16)
+    at async CdpFrame.evaluate (D:\projects\游戏站\yourlair.online\yourlair-importer\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Frame.js:353:20)
+    at async CdpPage.evaluate (D:\projects\游戏站\yourlair.online\yourlair-importer\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:841:20)
+    at async main (D:\projects\游戏站\yourlair.online\yourlair-importer\crazygames-crawler.js:174:34)
+[INFO][2025-03-29T11:29:53.284Z] 处理游戏 2/20: https://www.crazygames.com/game/ragdoll-archers
+[ERROR][2025-03-29T11:30:05.097Z] 处理游戏时出错: https://www.crazygames.com/game/ragdoll-archers
+DOMException: Failed to execute 'querySelector' on 'Document': 'button:has-text("Embed")' is not a valid selector.
+    at evaluate (evaluate at main (D:\projects\游戏站\yourlair.online\yourlair-importer\crazygames-crawler.js:174:45), <anonymous>:12:36)
+    at #evaluate (D:\projects\游戏站\yourlair.online\yourlair-importer\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\ExecutionContext.js:222:56)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async ExecutionContext.evaluate (D:\projects\游戏站\yourlair.online\yourlair-importer\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\ExecutionContext.js:117:16)
+    at async IsolatedWorld.evaluate (D:\projects\游戏站\yourlair.online\yourlair-importer\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\IsolatedWorld.js:124:16)
+    at async CdpFrame.evaluate (D:\projects\游戏站\yourlair.online\yourlair-importer\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Frame.js:353:20)
+    at async CdpPage.evaluate (D:\projects\游戏站\yourlair.online\yourlair-importer\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:841:20)
+    at async main (D:\projects\游戏站\yourlair.online\yourlair-importer\crazygames-crawler.js:174:34)
+[INFO][2025-03-29T11:30:05.100Z] 处理游戏 3/20: https://www.crazygames.com/game/mahjongg-solitaire
+[INFO][2025-03-29T11:32:21.623Z] 开始抓取CrazyGames游戏数据
+[INFO][2025-03-29T11:32:21.988Z] 访问游戏列表页面: https://www.crazygames.com/games
+[INFO][2025-03-29T11:32:36.906Z] 滚动页面加载更多游戏...
+[INFO][2025-03-29T11:32:41.917Z] 找到 20 个游戏链接
+[INFO][2025-03-29T11:32:41.918Z] 处理游戏 1/20: https://www.crazygames.com/game/bloxdhop-io
+[INFO][2025-03-29T11:32:50.928Z]   找到Embed按钮，位置: x=276.03515625, y=837.859375
+[INFO][2025-03-29T11:32:51.944Z]   点击了Embed按钮
+[INFO][2025-03-29T11:32:53.953Z]   未找到文本区域，但可能从对话框内容中提取了iframe
+[INFO][2025-03-29T11:32:54.957Z]   构建iframe源: https://www.crazygames.com/game/bloxdhop-io/embed
+[INFO][2025-03-29T11:32:56.964Z] 处理游戏 2/20: https://www.crazygames.com/game/ragdoll-archers
+[INFO][2025-03-29T11:33:05.855Z]   找到Embed按钮，位置: x=276.03515625, y=837.859375
+[INFO][2025-03-29T11:46:40.312Z] 开始抓取CrazyGames游戏数据
+[INFO][2025-03-29T11:46:40.801Z] 访问游戏列表页面: https://www.crazygames.com/games
+[INFO][2025-03-29T11:46:56.616Z] 滚动页面加载更多游戏...
+[INFO][2025-03-29T11:47:01.632Z] 找到 20 个游戏链接
+[INFO][2025-03-29T11:47:01.633Z] 处理游戏 1/20: https://www.crazygames.com/game/bloxdhop-io
+[INFO][2025-03-29T11:47:11.160Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T11:47:11.163Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T11:47:12.185Z]   点击了Embed按钮
+[INFO][2025-03-29T11:47:15.206Z]   构建iframe源: https://www.crazygames.com/game/bloxdhop-io/embed
+[INFO][2025-03-29T11:47:17.207Z] 处理游戏 2/20: https://www.crazygames.com/game/ragdoll-archers
+[INFO][2025-03-29T11:47:30.968Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T11:47:30.970Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T11:47:31.982Z]   点击了Embed按钮
+[INFO][2025-03-29T11:47:35.017Z]   构建iframe源: https://www.crazygames.com/game/ragdoll-archers/embed
+[INFO][2025-03-29T11:47:37.020Z] 处理游戏 3/20: https://www.crazygames.com/game/mahjongg-solitaire
+[INFO][2025-03-29T11:47:48.142Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T11:47:48.146Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T11:47:49.160Z]   点击了Embed按钮
+[INFO][2025-03-29T11:47:52.172Z]   构建iframe源: https://www.crazygames.com/game/mahjongg-solitaire/embed
+[INFO][2025-03-29T11:47:54.174Z] 处理游戏 4/20: https://www.crazygames.com/game/words-of-wonders
+[INFO][2025-03-29T11:48:02.817Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T11:48:02.820Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T11:48:03.845Z]   点击了Embed按钮
+[INFO][2025-03-29T11:48:06.868Z]   构建iframe源: https://www.crazygames.com/game/words-of-wonders/embed
+[INFO][2025-03-29T11:48:08.880Z] 处理游戏 5/20: https://www.crazygames.com/game/count-masters-stickman-games
+[INFO][2025-03-29T11:48:19.892Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T11:48:19.893Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T11:48:20.911Z]   点击了Embed按钮
+[INFO][2025-03-29T11:48:23.944Z]   构建iframe源: https://www.crazygames.com/game/count-masters-stickman-games/embed
+[INFO][2025-03-29T11:48:25.947Z] 已保存 5 个游戏数据
+[INFO][2025-03-29T11:48:25.947Z] 处理游戏 6/20: https://www.crazygames.com/game/8-ball-billiards-classic
+[INFO][2025-03-29T11:48:36.773Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T11:48:36.775Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T11:48:37.802Z]   点击了Embed按钮
+[INFO][2025-03-29T11:48:40.832Z]   构建iframe源: https://www.crazygames.com/game/8-ball-billiards-classic/embed
+[INFO][2025-03-29T11:48:42.835Z] 处理游戏 7/20: https://www.crazygames.com/game/solar-smash
+[INFO][2025-03-29T11:48:52.060Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T11:48:52.063Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T11:48:53.079Z]   点击了Embed按钮
+[INFO][2025-03-29T11:48:56.112Z]   构建iframe源: https://www.crazygames.com/game/solar-smash/embed
+[INFO][2025-03-29T11:48:58.114Z] 处理游戏 8/20: https://www.crazygames.com/game/slice-master
+[INFO][2025-03-29T11:49:06.461Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T11:49:06.464Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T11:49:07.482Z]   点击了Embed按钮
+[INFO][2025-03-29T11:49:10.513Z]   构建iframe源: https://www.crazygames.com/game/slice-master/embed
+[INFO][2025-03-29T11:49:12.515Z] 处理游戏 9/20: https://www.crazygames.com/game/farm-merge-valley
+[INFO][2025-03-29T12:37:14.935Z] 开始抓取CrazyGames游戏数据
+[INFO][2025-03-29T12:37:15.949Z] 访问游戏列表页面: https://www.crazygames.com/games
+[INFO][2025-03-29T12:37:32.281Z] 滚动页面加载更多游戏...
+[INFO][2025-03-29T12:37:37.294Z] 找到 20 个游戏链接
+[INFO][2025-03-29T12:37:37.295Z] 处理游戏 1/20: https://www.crazygames.com/game/bloxdhop-io
+[INFO][2025-03-29T12:37:45.387Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:37:45.391Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:37:46.408Z]   点击了Embed按钮
+[INFO][2025-03-29T12:37:49.429Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/bloxdhop-io
+[INFO][2025-03-29T12:37:51.437Z] 处理游戏 2/20: https://www.crazygames.com/game/ragdoll-archers
+[INFO][2025-03-29T12:37:59.286Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:37:59.288Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:38:00.305Z]   点击了Embed按钮
+[INFO][2025-03-29T12:38:03.330Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/ragdoll-archers
+[INFO][2025-03-29T12:38:05.333Z] 处理游戏 3/20: https://www.crazygames.com/game/mahjongg-solitaire
+[INFO][2025-03-29T12:38:18.603Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:38:18.606Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:38:19.620Z]   点击了Embed按钮
+[INFO][2025-03-29T12:38:22.666Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/mahjongg-solitaire
+[INFO][2025-03-29T12:38:24.672Z] 处理游戏 4/20: https://www.crazygames.com/game/words-of-wonders
+[INFO][2025-03-29T12:38:32.199Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:38:32.201Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:38:33.214Z]   点击了Embed按钮
+[INFO][2025-03-29T12:38:36.250Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/words-of-wonders
+[INFO][2025-03-29T12:38:38.257Z] 处理游戏 5/20: https://www.crazygames.com/game/count-masters-stickman-games
+[INFO][2025-03-29T12:38:47.171Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:38:47.173Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:38:48.190Z]   点击了Embed按钮
+[INFO][2025-03-29T12:38:51.215Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/count-masters-stickman-games
+[INFO][2025-03-29T12:38:53.224Z] 已保存 5 个游戏数据
+[INFO][2025-03-29T12:38:53.224Z] 处理游戏 6/20: https://www.crazygames.com/game/8-ball-billiards-classic
+[INFO][2025-03-29T12:39:00.971Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:39:00.973Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:39:01.996Z]   点击了Embed按钮
+[INFO][2025-03-29T12:39:05.007Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/8-ball-billiards-classic
+[INFO][2025-03-29T12:39:07.011Z] 处理游戏 7/20: https://www.crazygames.com/game/solar-smash
+[INFO][2025-03-29T12:39:16.389Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:39:16.392Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:39:17.415Z]   点击了Embed按钮
+[INFO][2025-03-29T12:39:20.443Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/solar-smash
+[INFO][2025-03-29T12:39:22.452Z] 处理游戏 8/20: https://www.crazygames.com/game/slice-master
+[INFO][2025-03-29T12:39:31.269Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:39:31.271Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:39:32.285Z]   点击了Embed按钮
+[INFO][2025-03-29T12:39:35.308Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/slice-master
+[INFO][2025-03-29T12:39:37.317Z] 处理游戏 9/20: https://www.crazygames.com/game/farm-merge-valley
+[INFO][2025-03-29T12:39:47.932Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:39:47.935Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:39:48.958Z]   点击了Embed按钮
+[INFO][2025-03-29T12:39:51.976Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/farm-merge-valley
+[INFO][2025-03-29T12:39:53.978Z] 处理游戏 10/20: https://www.crazygames.com/game/hazmob-fps-online-shooter
+[INFO][2025-03-29T12:40:02.986Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:40:02.988Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:40:04.003Z]   点击了Embed按钮
+[INFO][2025-03-29T12:40:07.043Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/hazmob-fps-online-shooter
+[INFO][2025-03-29T12:40:09.045Z] 已保存 10 个游戏数据
+[INFO][2025-03-29T12:40:09.045Z] 处理游戏 11/20: https://www.crazygames.com/game/hexa-sort
+[INFO][2025-03-29T12:40:20.080Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:40:20.082Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:40:21.099Z]   点击了Embed按钮
+[INFO][2025-03-29T12:40:24.129Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/hexa-sort
+[INFO][2025-03-29T12:40:26.132Z] 处理游戏 12/20: https://www.crazygames.com/game/supermarket-simulator-cashier-game
+[INFO][2025-03-29T12:40:34.825Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:40:34.827Z]   找到Embed按钮，位置: x=276.03515625, y=370.53125
+[INFO][2025-03-29T12:40:35.846Z]   点击了Embed按钮
+[INFO][2025-03-29T12:40:38.881Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/supermarket-simulator-cashier-game
+[INFO][2025-03-29T12:40:40.896Z] 处理游戏 13/20: https://www.crazygames.com/game/mergest-kingdom
+[INFO][2025-03-29T12:40:47.891Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:40:47.893Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:40:48.908Z]   点击了Embed按钮
+[INFO][2025-03-29T12:40:51.936Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/mergest-kingdom
+[INFO][2025-03-29T12:40:53.946Z] 处理游戏 14/20: https://www.crazygames.com/game/crazy-flips-3d
+[INFO][2025-03-29T12:41:03.341Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:41:03.343Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:41:04.367Z]   点击了Embed按钮
+[INFO][2025-03-29T12:41:07.414Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/crazy-flips-3d
+[INFO][2025-03-29T12:41:09.417Z] 处理游戏 15/20: https://www.crazygames.com/game/tower-swap
+[INFO][2025-03-29T12:41:20.478Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:41:20.481Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:41:21.498Z]   点击了Embed按钮
+[INFO][2025-03-29T12:41:24.527Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/tower-swap
+[INFO][2025-03-29T12:41:26.542Z] 已保存 15 个游戏数据
+[INFO][2025-03-29T12:41:26.543Z] 处理游戏 16/20: https://www.crazygames.com/game/traffic-rider-vvq
+[INFO][2025-03-29T12:41:36.416Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:41:36.418Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:41:37.442Z]   点击了Embed按钮
+[INFO][2025-03-29T12:41:40.455Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/traffic-rider-vvq
+[INFO][2025-03-29T12:41:42.471Z] 处理游戏 17/20: https://www.crazygames.com/game/rpg-idle-clicker-uzz
+[INFO][2025-03-29T12:41:52.746Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:41:52.748Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:41:53.770Z]   点击了Embed按钮
+[INFO][2025-03-29T12:41:56.803Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/rpg-idle-clicker-uzz
+[INFO][2025-03-29T12:41:58.808Z] 处理游戏 18/20: https://www.crazygames.com/game/ragdoll-break
+[INFO][2025-03-29T12:42:06.397Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:42:06.399Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:42:07.418Z]   点击了Embed按钮
+[INFO][2025-03-29T12:42:10.451Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/ragdoll-break
+[INFO][2025-03-29T12:42:12.460Z] 处理游戏 19/20: https://www.crazygames.com/game/idle-saga
+[INFO][2025-03-29T12:42:21.162Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:42:21.164Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:42:22.188Z]   点击了Embed按钮
+[INFO][2025-03-29T12:42:25.219Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/idle-saga
+[INFO][2025-03-29T12:42:27.225Z] 处理游戏 20/20: https://www.crazygames.com/game/empire-clicker
+[INFO][2025-03-29T12:42:37.067Z]   尝试查找Embed按钮...
+[INFO][2025-03-29T12:42:37.069Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-29T12:42:38.086Z]   点击了Embed按钮
+[INFO][2025-03-29T12:42:41.123Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/empire-clicker
+[INFO][2025-03-29T12:42:43.132Z] 已保存 20 个游戏数据
+[INFO][2025-03-29T12:42:43.133Z] 完成! 已抓取 20 个游戏，结果保存到 data/crazygames-list.json
+[INFO][2025-03-29T12:42:43.133Z] 请使用筛选工具来选择要导入的游戏
