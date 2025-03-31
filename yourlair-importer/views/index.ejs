@@ -38,6 +38,21 @@
       padding: 15px 0;
       border-bottom: 1px solid #eee;
     }
+    .category-badge {
+      display: inline-block;
+      padding: 0.25em 0.6em;
+      font-size: 75%;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: 10rem;
+      background-color: #6c757d;
+      color: white;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
   </style>
 </head>
 <body>
@@ -78,16 +93,25 @@
     <div class="row" id="gamesContainer">
       <% games.forEach((game, index) => { %>
         <div class="col-md-3 mb-4 game-item" 
-             data-title="<%= game.title.toLowerCase() %>" 
-             data-category="<%= game.category %>"
-             data-selected="<%= game.selected ? 'true' : 'false' %>">
+            data-title="<%= game.title.toLowerCase() %>" 
+            data-category="<%= game.category %>"
+            data-categories="<%= game.categories ? game.categories.join(',') : game.category %>"
+            data-selected="<%= game.selected ? 'true' : 'false' %>">
           <div class="card game-card <%= game.selected ? 'selected' : '' %>" data-index="<%= index %>">
             <div class="thumbnail-container">
               <img src="<%= game.thumbnailUrl %>" class="thumbnail" alt="<%= game.title %>">
             </div>
             <div class="card-body">
               <h5 class="card-title game-title"><%= game.title %></h5>
-              <p class="card-text"><small class="text-muted"><%= game.category %></small></p>
+              <div class="mb-2">
+                <% if (game.categories && game.categories.length > 0) { %>
+                  <% game.categories.forEach(cat => { %>
+                    <span class="category-badge"><%= cat %></span>
+                  <% }); %>
+                <% } else if (game.category) { %>
+                  <span class="category-badge"><%= game.category %></span>
+                <% } %>
+              </div>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="form-check">
                   <input class="form-check-input game-checkbox" type="checkbox" value="" id="check<%= index %>" <%= game.selected ? 'checked' : '' %>>
@@ -139,6 +163,16 @@
         const game = games[index];
         currentGameIndex = index;
         
+        // 创建分类标签HTML
+        let categoriesHTML = '';
+        if (game.categories && game.categories.length > 0) {
+          categoriesHTML = game.categories.map(cat => 
+            `<span class="category-badge">${cat}</span>`
+          ).join(' ');
+        } else if (game.category) {
+          categoriesHTML = `<span class="category-badge">${game.category}</span>`;
+        }
+        
         const content = document.getElementById('gameDetailsContent');
         content.innerHTML = `
           <div class="row">
@@ -147,7 +181,7 @@
             </div>
             <div class="col-md-7">
               <h4>${game.title}</h4>
-              <p><strong>分类:</strong> ${game.category}</p>
+              <div class="mb-2">${categoriesHTML}</div>
               <p><strong>描述:</strong> ${game.description || '无描述'}</p>
               <p><strong>URL:</strong> <a href="${game.url}" target="_blank">${game.url}</a></p>
               <p><strong>iframe源:</strong> ${game.iframeSrc}</p>
@@ -265,7 +299,6 @@
       
       document.querySelectorAll('.game-item').forEach(item => {
         const title = item.getAttribute('data-title');
-        const itemCategory = item.getAttribute('data-category');
         const selected = item.getAttribute('data-selected');
         
         let visible = true;
@@ -276,8 +309,20 @@
         }
         
         // 分类过滤
-        if (category && itemCategory !== category) {
-          visible = false;
+        if (category) {
+          let categoriesMatch = false;
+          
+          // 检查新的categories数组
+          if (item.getAttribute('data-categories')) {
+            const itemCategories = item.getAttribute('data-categories').split(',');
+            if (itemCategories.some(cat => cat.toLowerCase() === category.toLowerCase())) {
+              categoriesMatch = true;
+            }
+          }
+          
+          if (!categoriesMatch) {
+            visible = false;
+          }
         }
         
         // 状态过滤

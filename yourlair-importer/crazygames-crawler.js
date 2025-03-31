@@ -20,9 +20,9 @@ const config = {
   // 超时设置 (毫秒)
   timeout: 60000,
   // 输出文件
-  outputFile: 'yourlair-importer/data/crazygames-list.json',
+  outputFile: path.join(__dirname, 'data', 'crazygames-list.json'),
   // 日志文件
-  logFile: 'yourlair-importer/logs/crazygames-crawler.log'
+  logFile: path.join(__dirname, 'logs', 'crazygames-crawler.log')
 };
 
 // 设置日志
@@ -163,69 +163,141 @@ async function main() {
           }
            
           // 提取分类 - 使用多种策略
-          let category = 'Games'; // 默认分类
+          let categories = []; // 存储多个分类
 
-          // 策略1: 尝试从面包屑导航获取
-          const breadcrumbCategory = document.querySelector('.breadcrumbs a:last-child, .breadcrumb a:last-child');
-          if (breadcrumbCategory && breadcrumbCategory.textContent.trim() !== 'Games') {
-            category = breadcrumbCategory.textContent.trim();
-          }
-
-          // 策略2: 尝试从游戏标签/分类标签获取
-          const categoryTags = document.querySelectorAll('.game-tags a, .game-categories a, .category-tag, [data-testid="game-category"]');
-          if (categoryTags && categoryTags.length > 0) {
-            const firstTag = categoryTags[0].textContent.trim();
-            if (firstTag && firstTag !== 'Games') {
-               category = firstTag;
+          try {
+            // 策略1: 针对性地查找底部面包屑导航中的分类链接
+            const breadcrumbLinks = document.querySelectorAll('a[href*="/games/"], a[href*="/io-games/"], a[href*="/adventure-games/"], a[href*="/minecraft-games/"]');
+            if (breadcrumbLinks && breadcrumbLinks.length > 0) {
+              // 提取所有分类名称，排除"Games"
+              const foundCategories = Array.from(breadcrumbLinks)
+                .map(el => {
+                  // 提取文本内容并修剪空白
+                  const text = el.textContent.trim();
+                  // 检查文本内容是.Io这样以点开头的特殊情况
+                  if (text.startsWith('.')) {
+                    return text.substring(1); // 移除前导点，如".Io"变为"Io"
+                  }
+                  return text;
+                })
+                .filter(text => text && text !== 'Games');
+              
+              if (foundCategories.length > 0) {
+                categories = foundCategories;
+              }
             }
+
+            // 如果上面的方法没找到分类，尝试其他策略
+            if (categories.length === 0) {
+              // 策略2: 尝试查找面包屑的不同实现方式
+              const alternativeBreadcrumb = document.querySelector('[aria-label="breadcrumb"], .breadcrumb, .breadcrumbs, .game-breadcrumb');
+              if (alternativeBreadcrumb) {
+                const links = alternativeBreadcrumb.querySelectorAll('a');
+                const foundCategories = Array.from(links)
+                  .map(el => el.textContent.trim())
+                  .filter(text => text && text !== 'Games' && text !== 'Home');
+                
+                if (foundCategories.length > 0) {
+                  categories = foundCategories;
+                }
+              }
+            }
+
+            // 策略3: 检查URL路径提取分类信息
+            if (categories.length === 0) {
+              const path = window.location.pathname;
+              
+              // 检查URL中的各种游戏分类路径
+              if (path.includes('/io-games/')) {
+                categories.push('Io');
+              }
+              if (path.includes('/adventure-games/')) {
+                categories.push('Adventure');
+              }
+              if (path.includes('/minecraft-games/') || path.toLowerCase().includes('minecraft')) {
+                categories.push('Minecraft');
+              }
+              if (path.includes('/puzzle-games/')) {
+                categories.push('Puzzle');
+              }
+              if (path.includes('/action-games/')) {
+                categories.push('Action');
+              }
+              if (path.includes('/multiplayer-games/')) {
+                categories.push('Multiplayer');
+              }
+              if (path.includes('/shooting-games/')) {
+                categories.push('Shooting');
+              }
+              if (path.includes('/strategy-games/')) {
+                categories.push('Strategy');
+              }
+              if (path.includes('/sports-games/')) {
+                categories.push('Sports');
+              }
+            }
+
+            // 策略4: 尝试从游戏标题和描述中提取关键词作为分类
+            if (categories.length === 0) {
+              const title = document.querySelector('h1')?.textContent.toLowerCase() || '';
+              const description = document.querySelector('meta[name="description"]')?.content.toLowerCase() || '';
+              
+              const categoryKeywords = {
+                'minecraft': 'Minecraft',
+                'io': 'Io',
+                'puzzle': 'Puzzle',
+                'adventure': 'Adventure',
+                'action': 'Action',
+                'strategy': 'Strategy',
+                'battle': 'Action',
+                'multiplayer': 'Multiplayer',
+                'shooter': 'Shooting',
+                'shooting': 'Shooting',
+                'racing': 'Racing',
+                'sports': 'Sports'
+              };
+              
+              for (const [keyword, category] of Object.entries(categoryKeywords)) {
+                if (title.includes(keyword) || description.includes(keyword)) {
+                  categories.push(category);
+                }
+              }
+            }
+          } catch (error) {
+            // 错误处理，确保即使出错也能继续
+            console.error("提取分类时发生错误:", error);
           }
 
-          // 策略3: 尝试从元数据中获取
-          const metaCategory = document.querySelector('meta[property="article:section"], meta[property="og:genre"]');
-          if (metaCategory && metaCategory.content && metaCategory.content !== 'Games') {
-            category = metaCategory.content.trim();
+          // 如果仍然没有找到分类，使用默认值
+          if (categories.length === 0) {
+            categories.push('Games');
           }
 
-          // 策略4: 尝试从URL中提取分类
-          const urlPath = window.location.pathname;
-          const categoryMatch = urlPath.match(/\/c\/([^\/]+)/);
-          if (categoryMatch && categoryMatch[1]) {
-            const urlCategory = categoryMatch[1].replace(/-/g, ' ');
-            category = urlCategory.charAt(0).toUpperCase() + urlCategory.slice(1);
-          }
+          // 移除重复项并只保留前3个分类
+          categories = [...new Set(categories)].slice(0, 3);
 
-          // 将类别映射到网站使用的标准分类
-          const categoryMapping = {
-            'Action': 'Action',
-            'Adventure': 'Adventure',
-            'Arcade': 'Action',
-            'Puzzle': 'Puzzle',
-            'Racing': 'Sports',
-            'Sports': 'Sports',
-            'Strategy': 'Strategy',
-            'Simulation': 'Strategy',
-            'Multiplayer': 'Action',
-            'Shooting': 'Action',
-            'Skill': 'Puzzle',
-            'Clicker': 'Puzzle',
-            'IO': 'Action',
-            // 添加更多映射...
+          // 标准化分类名称（确保首字母大写）
+          categories = categories.map(cat => {
+            // 对于特殊情况IO，确保正确的大小写
+            if (cat.toLowerCase() === 'io') return 'IO';
+            return cat.charAt(0).toUpperCase() + cat.slice(1);
+          });
+          
+          // 生成slug
+          const slug = title.toLowerCase()
+            .replace(/[^\w\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/-+/g, '-');
+            
+          return {
+            title,
+            slug,
+            thumbnail,
+            description,
+            categories
           };
-
-          // 映射到标准分类
-          if (categoryMapping[category]) {
-          category = categoryMapping[category];
-          }
-
-          return { title, description, thumbnail, category };
         });
         
-        // 生成slug
-        const slug = gameInfo.title.toLowerCase()
-          .replace(/[^\w\s-]/g, '')
-          .replace(/\s+/g, '-')
-          .replace(/-+/g, '-');
-          
         // 滚动页面以确保Embed按钮可见
         await page.evaluate(() => {
           window.scrollBy(0, 500);
@@ -371,25 +443,26 @@ async function main() {
         }
         
         // 如果没有获取到iframe，或者格式不正确，尝试构建一个正确的链接
-            if (!iframeSrc || !iframeSrc.includes('/embed/')) {
-             // 从游戏URL中提取游戏名称
-             const gameUrlObj = new URL(gameUrl);
-             const pathParts = gameUrlObj.pathname.split('/');
-                const gameName = pathParts[pathParts.length - 1]; // 获取路径最后一部分作为游戏名
-    
-         // 使用正确的格式构建iframe源
-            iframeSrc = `https://www.crazygames.com/embed/${gameName}`;
-            logger.info(`  构建正确格式的iframe源: ${iframeSrc}`);
-         }
+        if (!iframeSrc || !iframeSrc.includes('/embed/')) {
+          // 从游戏URL中提取游戏名称
+          const gameUrlObj = new URL(gameUrl);
+          const pathParts = gameUrlObj.pathname.split('/');
+          const gameName = pathParts[pathParts.length - 1]; // 获取路径最后一部分作为游戏名
+  
+          // 使用正确的格式构建iframe源
+          iframeSrc = `https://www.crazygames.com/embed/${gameName}`;
+          logger.info(`  构建正确格式的iframe源: ${iframeSrc}`);
+        }
         
         // 添加游戏信息到列表
         allGames.push({
           title: gameInfo.title,
-          slug,
+          slug: gameInfo.slug,
           url: gameUrl,
           thumbnailUrl: gameInfo.thumbnail,
           description: gameInfo.description,
-          category: gameInfo.category,
+          categories: gameInfo.categories,
+          category: gameInfo.categories.join(', '), // 保持向后兼容
           iframeSrc,
           selected: false
         });

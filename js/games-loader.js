@@ -17,7 +17,7 @@ const gameCategories = [
 // 获取游戏数据
 async function loadGamesData() {
     try {
-        const response = await fetch('/yourlair-importer/data/crazygames-list.json');
+        const response = await fetch('/yourlair-importer/data/selected-games.json');
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }

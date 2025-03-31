@@ -9,11 +9,11 @@ const bodyParser = require('body-parser');
 // 配置
 const config = {
   // 输入文件 (由爬虫生成)
-  gamesListFile: 'yourlair-importer/data/crazygames-list.json',
+  gamesListFile: path.join(__dirname, 'data', 'crazygames-list.json'),
   // 输出文件 (选中的游戏)
-  selectedGamesFile: 'yourlair-importer/data/selected-games.json',
+  selectedGamesFile: path.join(__dirname, 'data', 'selected-games.json'),
   // 导入游戏数据到网站的目标文件
-  targetDataFile: 'data/games-data.json',
+  targetDataFile: path.join(__dirname, '..', 'data', 'games-data.json'),
   // 服务器端口
   port: 3000
 };
@@ -88,6 +88,21 @@ const createTemplateFiles = () => {
       padding: 15px 0;
       border-bottom: 1px solid #eee;
     }
+    .category-badge {
+      display: inline-block;
+      padding: 0.25em 0.6em;
+      font-size: 75%;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: 10rem;
+      background-color: #6c757d;
+      color: white;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
   </style>
 </head>
 <body>
@@ -128,16 +143,25 @@ const createTemplateFiles = () => {
     <div class="row" id="gamesContainer">
       <% games.forEach((game, index) => { %>
         <div class="col-md-3 mb-4 game-item" 
-             data-title="<%= game.title.toLowerCase() %>" 
-             data-category="<%= game.category %>"
-             data-selected="<%= game.selected ? 'true' : 'false' %>">
+            data-title="<%= game.title.toLowerCase() %>" 
+            data-category="<%= game.category %>"
+            data-categories="<%= game.categories ? game.categories.join(',') : game.category %>"
+            data-selected="<%= game.selected ? 'true' : 'false' %>">
           <div class="card game-card <%= game.selected ? 'selected' : '' %>" data-index="<%= index %>">
             <div class="thumbnail-container">
               <img src="<%= game.thumbnailUrl %>" class="thumbnail" alt="<%= game.title %>">
             </div>
             <div class="card-body">
               <h5 class="card-title game-title"><%= game.title %></h5>
-              <p class="card-text"><small class="text-muted"><%= game.category %></small></p>
+              <div class="mb-2">
+                <% if (game.categories && game.categories.length > 0) { %>
+                  <% game.categories.forEach(cat => { %>
+                    <span class="category-badge"><%= cat %></span>
+                  <% }); %>
+                <% } else if (game.category) { %>
+                  <span class="category-badge"><%= game.category %></span>
+                <% } %>
+              </div>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="form-check">
                   <input class="form-check-input game-checkbox" type="checkbox" value="" id="check<%= index %>" <%= game.selected ? 'checked' : '' %>>
@@ -189,6 +213,16 @@ const createTemplateFiles = () => {
         const game = games[index];
         currentGameIndex = index;
         
+        // 创建分类标签HTML
+        let categoriesHTML = '';
+        if (game.categories && game.categories.length > 0) {
+          categoriesHTML = game.categories.map(cat => 
+            \`<span class="category-badge">\${cat}</span>\`
+          ).join(' ');
+        } else if (game.category) {
+          categoriesHTML = \`<span class="category-badge">\${game.category}</span>\`;
+        }
+        
         const content = document.getElementById('gameDetailsContent');
         content.innerHTML = \`
           <div class="row">
@@ -197,7 +231,7 @@ const createTemplateFiles = () => {
             </div>
             <div class="col-md-7">
               <h4>\${game.title}</h4>
-              <p><strong>分类:</strong> \${game.category}</p>
+              <div class="mb-2">\${categoriesHTML}</div>
               <p><strong>描述:</strong> \${game.description || '无描述'}</p>
               <p><strong>URL:</strong> <a href="\${game.url}" target="_blank">\${game.url}</a></p>
               <p><strong>iframe源:</strong> \${game.iframeSrc}</p>
@@ -315,7 +349,6 @@ const createTemplateFiles = () => {
       
       document.querySelectorAll('.game-item').forEach(item => {
         const title = item.getAttribute('data-title');
-        const itemCategory = item.getAttribute('data-category');
         const selected = item.getAttribute('data-selected');
         
         let visible = true;
@@ -326,8 +359,20 @@ const createTemplateFiles = () => {
         }
         
         // 分类过滤
-        if (category && itemCategory !== category) {
-          visible = false;
+        if (category) {
+          let categoriesMatch = false;
+          
+          // 检查新的categories数组
+          if (item.getAttribute('data-categories')) {
+            const itemCategories = item.getAttribute('data-categories').split(',');
+            if (itemCategories.some(cat => cat.toLowerCase() === category.toLowerCase())) {
+              categoriesMatch = true;
+            }
+          }
+          
+          if (!categoriesMatch) {
+            visible = false;
+          }
         }
         
         // 状态过滤
@@ -410,14 +455,21 @@ const setupRoutes = (app) => {
       }
       
       // 定义网站使用的分类
-      const websiteCategories = ['Games', 'Action', 'Puzzle', 'Adventure', 'Strategy', 'Sports'];
+      const websiteCategories = ['Games', 'Action', 'Puzzle', 'Adventure', 'Strategy', 'Sports', 'IO', 'Multiplayer', 'Shooting'];
 
-      // 从游戏中提取分类，但只保留网站已定义的分类
-      let extractedCategories = [...new Set(games.map(game => game.category))];
-      extractedCategories = extractedCategories.filter(cat => websiteCategories.includes(cat));
+      // 从游戏中提取所有分类
+      let extractedCategories = new Set();
+      games.forEach(game => {
+        if (game.categories && Array.isArray(game.categories)) {
+          game.categories.forEach(cat => extractedCategories.add(cat));
+        } else if (game.category) {
+          game.category.split(', ').forEach(cat => extractedCategories.add(cat.trim()));
+        }
+      });
+      extractedCategories = Array.from(extractedCategories);
 
       // 确保所有网站分类都包含在内，即使没有该分类的游戏
-      const categories = [...new Set([...websiteCategories, ...extractedCategories])];
+      const categories = [...new Set([...websiteCategories, ...extractedCategories])].sort();
 
       res.render('index', { games, categories });
     } catch (error) {
@@ -478,21 +530,40 @@ const setupRoutes = (app) => {
 // 导入游戏到网站数据文件
 function importToWebsite(selectedGames) {
   // 转换游戏数据到网站所需的格式
-  const websiteGames = selectedGames.map(game => ({
-    title: game.title,
-    slug: game.slug,
-    url: game.url,
-    description: game.description || `Play ${game.title} online for free on YourLair.`,
-    longDescription: game.description || `Play ${game.title} online for free on YourLair.`,
-    coverImage: game.thumbnailUrl,
-    category: game.category.toLowerCase(),
-    iframeSrc: game.iframeSrc,
-    embedCode: `<iframe src="${game.iframeSrc}" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>`,
-    supportsEmbed: true,
-    addedDate: new Date().toISOString().split('T')[0],
-    rating: Math.floor(Math.random() * 2) + 4,  // 随机评分4-5
-    plays: Math.floor(Math.random() * 10000)    // 随机播放次数
-  }));
+  const websiteGames = selectedGames.map(game => {
+    let categories;
+    
+    // 处理分类数据
+    if (game.categories && Array.isArray(game.categories)) {
+      // 使用爬虫提供的categories数组
+      categories = game.categories;
+    } else if (game.category) {
+      // 从字符串分割
+      categories = game.category.split(',').map(cat => cat.trim());
+    } else {
+      categories = ['Games'];
+    }
+    
+    // 组合主要分类字符串 (向后兼容)
+    const categoryString = categories.join(', ').toLowerCase();
+    
+    return {
+      title: game.title,
+      slug: game.slug,
+      url: game.url,
+      description: game.description || `Play ${game.title} online for free on YourLair.`,
+      longDescription: game.description || `Play ${game.title} online for free on YourLair.`,
+      coverImage: game.thumbnailUrl,
+      category: categoryString,
+      categories: categories,
+      iframeSrc: game.iframeSrc,
+      embedCode: `<iframe src="${game.iframeSrc}" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>`,
+      supportsEmbed: true,
+      addedDate: new Date().toISOString().split('T')[0],
+      rating: Math.floor(Math.random() * 2) + 4,  // 随机评分4-5
+      plays: Math.floor(Math.random() * 10000)    // 随机播放次数
+    };
+  });
   
   // 确保目录存在
   const dir = path.dirname(config.targetDataFile);
