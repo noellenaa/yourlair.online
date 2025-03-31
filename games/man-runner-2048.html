@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T12RSVRG7Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-T12RSVRG7Z');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="game-title">Man Runner 2048 - YourLair</title>
+    <meta id="game-meta-description" name="description" content="Play Man Runner 2048 online - Man Runner 2048 is a fun casual game where you run and merge men to reach 2048. Your goal is to get the highest score on each level so you can shoot the giant monsters with the most power.">
+    <link id="game-canonical" rel="canonical" href="https://yourlair.online/games/man-runner-2048.html" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/image-loader.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#6366F1', // Purple theme
+                        'primary-light': '#A5B4FC',
+                        'primary-dark': '#4F46E5',
+                        'dark-bg': '#111827', // Dark background
+                        'card-bg': '#1F2937', // Card background
+                        'light-text': '#F9FAFB', // Light text
+                        'gray-text': '#9CA3AF', // Gray text
+                    },
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'San Francisco', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Card hover effect */
+        .game-card {
+            transition: all 0.3s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+        }
+        /* Tag hover effect */
+        .category-tag:hover {
+            background-color: rgba(99, 102, 241, 0.7);
+        }
+        /* Image loading animation */
+        .image-loading {
+            background: linear-gradient(90deg, #1F2937, #374151, #1F2937);
+            background-size: 200% 100%;
+            animation: loading 1.5s ease-in-out infinite;
+        }
+        @keyframes loading {
+            0% {background-position: 0% 50%}
+            50% {background-position: 100% 50%}
+            100% {background-position: 0% 50%}
+        }
+        /* Game iframe container */
+        .game-iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .game-iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-light-text font-sans antialiased">
+    <!-- Top navigation bar -->
+    <header class="bg-card-bg shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <!-- Site logo -->
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-primary">YourLair.online</a>
+                    <!-- Main navigation -->
+                    <nav class="hidden md:ml-8 md:flex space-x-6">
+                        <a href="../index.html" class="text-light-text hover:text-primary px-2 py-1 rounded-md">Games</a>
+                        <a href="../categories.html" class="text-light-text hover:text-primary px-2 py-1 rounded-md">Categories</a>
+                        <a href="../popular.html" class="text-light-text hover:text-primary px-2 py-1 rounded-md">Rankings</a>
+                        <a href="../new.html" class="text-light-text hover:text-primary px-2 py-1 rounded-md">New Games</a>
+                    </nav>
+                </div>
+                
+                <!-- Right side login button -->
+                <div class="flex items-center">
+                    <a href="#" class="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-md text-sm font-medium">Login</a>
+                    <button class="md:hidden ml-4 text-gray-text hover:text-white focus:outline-none" id="mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile navigation menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="../index.html" class="block text-light-text hover:bg-primary-dark hover:text-white px-3 py-2 rounded-md">Games</a>
+                    <a href="../categories.html" class="block text-light-text hover:bg-primary-dark hover:text-white px-3 py-2 rounded-md">Categories</a>
+                    <a href="../popular.html" class="block text-light-text hover:bg-primary-dark hover:text-white px-3 py-2 rounded-md">Rankings</a>
+                    <a href="../new.html" class="block text-light-text hover:bg-primary-dark hover:text-white px-3 py-2 rounded-md">New Games</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-card-bg border-b border-gray-800">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center text-sm">
+                <a href="../index.html" class="text-gray-text hover:text-primary">Home</a>
+                <span class="mx-2 text-gray-600">/</span>
+                <a href="../categories.html" class="text-gray-text hover:text-primary">Categories</a>
+                <span class="mx-2 text-gray-600">/</span>
+                <a href="../categories/games.html" id="game-category-breadcrumb" class="text-primary hover:underline">Games</a>
+                <span class="mx-2 text-gray-600">/</span>
+                <span class="text-gray-text" id="game-breadcrumb-title">Man Runner 2048</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content area -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Game header -->
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold mb-2" id="header-game-title">Man Runner 2048</h1>
+            <div class="flex flex-wrap gap-2 mb-4" id="game-tags">
+<span class="bg-card-bg px-3 py-1 rounded-full text-sm">Games</span>
+</div>
+            <p class="text-xl text-gray-text" id="game-short-description">Man Runner 2048 is a fun casual game where you run and merge men to reach 2048. Your goal is to get the highest score on each level so you can shoot the giant monsters with the most power.</p>
+        </div>
+        
+        <!-- Game iframe -->
+        <div class="bg-card-bg rounded-xl overflow-hidden mb-8">
+            <div class="game-iframe-container">
+                <iframe id="game-iframe" src="https://www.crazygames.com/embed/man-runner-2048" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <!-- Game details -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Game info column -->
+            <div class="lg:col-span-2">
+                <div class="bg-card-bg rounded-xl p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">About the Game</h2>
+                    <p id="game-overview" class="text-gray-text mb-4">Game description with more details about the gameplay, features, and what makes it unique.</p>
+                    
+                    <h3 class="text-xl font-bold mt-6 mb-3">How to Play</h3>
+                    <p id="how-to-play" class="text-gray-text mb-4">Instructions on how to play the game, including controls and objectives.</p>
+                    
+                    <h3 class="text-xl font-bold mt-6 mb-3">Tips & Tricks</h3>
+                    <p id="game-tips" class="text-gray-text mb-4">Some helpful tips and strategies for players to improve their gameplay experience.</p>
+                </div>
+                
+                <div class="bg-card-bg rounded-xl p-6">
+                    <h2 class="text-2xl font-bold mb-4">Game Features</h2>
+                    <ul id="game-features" class="text-gray-text list-disc pl-5 space-y-2">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                        <li>Feature 4</li>
+                        <li>Feature 5</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Game info sidebar -->
+            <div>
+                <div class="bg-card-bg rounded-xl p-6">
+                    <h2 class="text-2xl font-bold mb-4">Game Details</h2>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-bold">Category</h3>
+                            <span id="game-detail-category" class="text-gray-text">Category</span>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold">Added</h3>
+                            <span id="game-added-date" class="text-gray-text">Date</span>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold">Plays</h3>
+                            <span id="game-plays" class="text-gray-text">0</span>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-bold">Rating</h3>
+                            <div class="flex items-center">
+                                <span id="game-rating" class="text-gray-text mr-2">4.5</span>
+                                <div class="flex text-yellow-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-lg font-bold mb-3">Share This Game</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-text hover:text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-text hover:text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-text hover:text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-card-bg rounded-xl p-6 mt-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-xl font-bold">Rate This Game</h2>
+                    </div>
+                    
+                    <div class="flex space-x-2">
+                        <button class="text-gray-400 hover:text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Related games -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">Related Games</h2>
+            <div id="related-games-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <!-- Related games will be filled dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-card-bg border-t border-gray-800 py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-4">YourLair.online</h3>
+                    <p class="text-gray-text mb-4">Free online game collection for your gaming experience</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-text hover:text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.

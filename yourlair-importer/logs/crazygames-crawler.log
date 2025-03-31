@@ -1,0 +1,520 @@
+[INFO][2025-03-30T13:54:25.169Z] 开始抓取CrazyGames游戏数据
+[INFO][2025-03-30T13:54:25.560Z] 访问游戏列表页面: https://www.crazygames.com/games
+[INFO][2025-03-30T13:54:50.992Z] 滚动页面加载更多游戏...
+[INFO][2025-03-30T13:54:56.003Z] 找到 100 个游戏链接
+[INFO][2025-03-30T13:54:56.004Z] 处理游戏 1/100: https://www.crazygames.com/game/bloxdhop-io
+[INFO][2025-03-30T13:55:09.004Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:55:09.007Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:55:10.021Z]   点击了Embed按钮
+[INFO][2025-03-30T13:55:13.044Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/bloxdhop-io
+[INFO][2025-03-30T13:55:15.046Z] 处理游戏 2/100: https://www.crazygames.com/game/ragdoll-archers
+[INFO][2025-03-30T13:55:28.915Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:55:28.917Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:55:29.942Z]   点击了Embed按钮
+[INFO][2025-03-30T13:55:32.983Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/ragdoll-archers
+[INFO][2025-03-30T13:55:34.992Z] 处理游戏 3/100: https://www.crazygames.com/game/mahjongg-solitaire
+[INFO][2025-03-30T13:55:44.691Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:55:44.693Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:55:45.708Z]   点击了Embed按钮
+[INFO][2025-03-30T13:55:48.745Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/mahjongg-solitaire
+[INFO][2025-03-30T13:55:50.749Z] 处理游戏 4/100: https://www.crazygames.com/game/words-of-wonders
+[INFO][2025-03-30T13:56:01.461Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:56:01.465Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:56:02.479Z]   点击了Embed按钮
+[INFO][2025-03-30T13:56:05.507Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/words-of-wonders
+[INFO][2025-03-30T13:56:07.524Z] 处理游戏 5/100: https://www.crazygames.com/game/count-masters-stickman-games
+[INFO][2025-03-30T13:56:17.348Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:56:17.350Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:56:18.367Z]   点击了Embed按钮
+[INFO][2025-03-30T13:56:21.376Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/count-masters-stickman-games
+[INFO][2025-03-30T13:56:23.392Z] 已保存 5 个游戏数据
+[INFO][2025-03-30T13:56:23.393Z] 处理游戏 6/100: https://www.crazygames.com/game/8-ball-billiards-classic
+[INFO][2025-03-30T13:56:39.660Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:56:39.662Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:56:40.682Z]   点击了Embed按钮
+[INFO][2025-03-30T13:56:43.717Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/8-ball-billiards-classic
+[INFO][2025-03-30T13:56:45.727Z] 处理游戏 7/100: https://www.crazygames.com/game/solar-smash
+[INFO][2025-03-30T13:56:58.753Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:56:58.756Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:56:59.772Z]   点击了Embed按钮
+[INFO][2025-03-30T13:57:02.791Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/solar-smash
+[INFO][2025-03-30T13:57:04.794Z] 处理游戏 8/100: https://www.crazygames.com/game/slice-master
+[INFO][2025-03-30T13:57:17.537Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:57:17.540Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:57:18.558Z]   点击了Embed按钮
+[INFO][2025-03-30T13:57:21.591Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/slice-master
+[INFO][2025-03-30T13:57:23.604Z] 处理游戏 9/100: https://www.crazygames.com/game/farm-merge-valley
+[INFO][2025-03-30T13:57:35.279Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:57:35.282Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:57:36.291Z]   点击了Embed按钮
+[INFO][2025-03-30T13:57:39.328Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/farm-merge-valley
+[INFO][2025-03-30T13:57:41.337Z] 处理游戏 10/100: https://www.crazygames.com/game/hazmob-fps-online-shooter
+[INFO][2025-03-30T13:57:49.238Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:57:49.242Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:57:50.266Z]   点击了Embed按钮
+[INFO][2025-03-30T13:57:53.282Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/hazmob-fps-online-shooter
+[INFO][2025-03-30T13:57:55.298Z] 已保存 10 个游戏数据
+[INFO][2025-03-30T13:57:55.299Z] 处理游戏 11/100: https://www.crazygames.com/game/supermarket-simulator-cashier-game
+[INFO][2025-03-30T13:58:04.472Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:58:04.475Z]   找到Embed按钮，位置: x=276.03515625, y=370.53125
+[INFO][2025-03-30T13:58:05.481Z]   点击了Embed按钮
+[INFO][2025-03-30T13:58:08.514Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/supermarket-simulator-cashier-game
+[INFO][2025-03-30T13:58:10.523Z] 处理游戏 12/100: https://www.crazygames.com/game/mergest-kingdom
+[INFO][2025-03-30T13:58:18.519Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:58:18.522Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:58:19.541Z]   点击了Embed按钮
+[INFO][2025-03-30T13:58:22.566Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/mergest-kingdom
+[INFO][2025-03-30T13:58:24.577Z] 处理游戏 13/100: https://www.crazygames.com/game/buildnow-gg
+[INFO][2025-03-30T13:58:34.208Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:58:34.211Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:58:35.235Z]   点击了Embed按钮
+[INFO][2025-03-30T13:58:38.272Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/buildnow-gg
+[INFO][2025-03-30T13:58:40.278Z] 处理游戏 14/100: https://www.crazygames.com/game/tower-swap
+[INFO][2025-03-30T13:58:50.136Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:58:50.139Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:58:51.161Z]   点击了Embed按钮
+[INFO][2025-03-30T13:58:54.201Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/tower-swap
+[INFO][2025-03-30T13:58:56.206Z] 处理游戏 15/100: https://www.crazygames.com/game/crazy-flips-3d
+[INFO][2025-03-30T13:59:05.953Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:59:05.956Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:59:06.980Z]   点击了Embed按钮
+[INFO][2025-03-30T13:59:10.019Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/crazy-flips-3d
+[INFO][2025-03-30T13:59:12.035Z] 已保存 15 个游戏数据
+[INFO][2025-03-30T13:59:12.036Z] 处理游戏 16/100: https://www.crazygames.com/game/space-waves
+[INFO][2025-03-30T13:59:23.912Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:59:23.916Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:59:24.942Z]   点击了Embed按钮
+[INFO][2025-03-30T13:59:27.971Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/space-waves
+[INFO][2025-03-30T13:59:29.972Z] 处理游戏 17/100: https://www.crazygames.com/game/sky-riders-buk
+[INFO][2025-03-30T13:59:38.409Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:59:38.412Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:59:39.430Z]   点击了Embed按钮
+[INFO][2025-03-30T13:59:42.464Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/sky-riders-buk
+[INFO][2025-03-30T13:59:44.474Z] 处理游戏 18/100: https://www.crazygames.com/game/cubes-2048-io
+[INFO][2025-03-30T13:59:55.336Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T13:59:55.338Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T13:59:56.362Z]   点击了Embed按钮
+[INFO][2025-03-30T13:59:59.401Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/cubes-2048-io
+[INFO][2025-03-30T14:00:01.416Z] 处理游戏 19/100: https://www.crazygames.com/game/escape-from-prison-multiplayer
+[INFO][2025-03-30T14:00:10.379Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:00:10.382Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:00:11.401Z]   点击了Embed按钮
+[INFO][2025-03-30T14:00:14.427Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/escape-from-prison-multiplayer
+[INFO][2025-03-30T14:00:16.443Z] 处理游戏 20/100: https://www.crazygames.com/game/holey-io-battle-royale
+[INFO][2025-03-30T14:00:25.583Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:00:25.586Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:00:26.601Z]   点击了Embed按钮
+[INFO][2025-03-30T14:00:29.642Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/holey-io-battle-royale
+[INFO][2025-03-30T14:00:31.645Z] 已保存 20 个游戏数据
+[INFO][2025-03-30T14:00:31.646Z] 处理游戏 21/100: https://www.crazygames.com/game/evowarsio
+[INFO][2025-03-30T14:00:41.073Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:00:41.076Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:00:42.099Z]   点击了Embed按钮
+[INFO][2025-03-30T14:00:45.121Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/evowarsio
+[INFO][2025-03-30T14:00:47.130Z] 处理游戏 22/100: https://www.crazygames.com/game/race-clicker-tap-tap-game
+[INFO][2025-03-30T14:00:59.230Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:00:59.233Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:01:00.257Z]   点击了Embed按钮
+[INFO][2025-03-30T14:01:03.274Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/race-clicker-tap-tap-game
+[INFO][2025-03-30T14:01:05.278Z] 处理游戏 23/100: https://www.crazygames.com/game/gridpunk---3v3-battle-royale
+[INFO][2025-03-30T14:01:14.890Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:01:14.893Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:01:15.912Z]   点击了Embed按钮
+[INFO][2025-03-30T14:01:18.941Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/gridpunk---3v3-battle-royale
+[INFO][2025-03-30T14:01:20.950Z] 处理游戏 24/100: https://www.crazygames.com/game/jump-guys
+[INFO][2025-03-30T14:01:30.171Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:01:30.173Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:01:31.186Z]   点击了Embed按钮
+[INFO][2025-03-30T14:01:34.222Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/jump-guys
+[INFO][2025-03-30T14:01:36.228Z] 处理游戏 25/100: https://www.crazygames.com/game/mini-golf-club
+[INFO][2025-03-30T14:01:45.843Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:01:45.845Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:01:46.866Z]   点击了Embed按钮
+[INFO][2025-03-30T14:01:49.893Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/mini-golf-club
+[INFO][2025-03-30T14:01:51.909Z] 已保存 25 个游戏数据
+[INFO][2025-03-30T14:01:51.909Z] 处理游戏 26/100: https://www.crazygames.com/game/kingdom-solitaire
+[INFO][2025-03-30T14:02:04.943Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:02:04.945Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:02:05.963Z]   点击了Embed按钮
+[INFO][2025-03-30T14:02:09.002Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/kingdom-solitaire
+[INFO][2025-03-30T14:02:11.015Z] 处理游戏 27/100: https://www.crazygames.com/game/draw-climber
+[INFO][2025-03-30T14:02:20.468Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:02:20.471Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:02:21.495Z]   点击了Embed按钮
+[INFO][2025-03-30T14:02:24.532Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/draw-climber
+[INFO][2025-03-30T14:02:26.545Z] 处理游戏 28/100: https://www.crazygames.com/game/find-the-vampire
+[INFO][2025-03-30T14:02:35.835Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:02:35.838Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:02:36.858Z]   点击了Embed按钮
+[INFO][2025-03-30T14:02:39.881Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/find-the-vampire
+[INFO][2025-03-30T14:02:41.889Z] 处理游戏 29/100: https://www.crazygames.com/game/playground
+[INFO][2025-03-30T14:02:51.087Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:02:51.090Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:02:52.110Z]   点击了Embed按钮
+[INFO][2025-03-30T14:02:55.129Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/playground
+[INFO][2025-03-30T14:02:57.130Z] 处理游戏 30/100: https://www.crazygames.com/game/ragdoll-break
+[INFO][2025-03-30T14:03:06.910Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:03:06.941Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:03:07.969Z]   点击了Embed按钮
+[INFO][2025-03-30T14:03:11.002Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/ragdoll-break
+[INFO][2025-03-30T14:03:13.016Z] 已保存 30 个游戏数据
+[INFO][2025-03-30T14:03:13.016Z] 处理游戏 31/100: https://www.crazygames.com/game/idle-saga
+[INFO][2025-03-30T14:03:22.957Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:03:22.960Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:03:23.980Z]   点击了Embed按钮
+[INFO][2025-03-30T14:03:27.007Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/idle-saga
+[INFO][2025-03-30T14:03:29.015Z] 处理游戏 32/100: https://www.crazygames.com/game/basketbros
+[INFO][2025-03-30T14:03:39.018Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:03:39.021Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:03:40.045Z]   点击了Embed按钮
+[INFO][2025-03-30T14:03:43.079Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/basketbros
+[INFO][2025-03-30T14:03:45.085Z] 处理游戏 33/100: https://www.crazygames.com/game/crusher-block-jwd
+[INFO][2025-03-30T14:03:55.385Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:03:55.388Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:03:56.405Z]   点击了Embed按钮
+[INFO][2025-03-30T14:03:59.443Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/crusher-block-jwd
+[INFO][2025-03-30T14:04:01.450Z] 处理游戏 34/100: https://www.crazygames.com/game/hexa-sort
+[INFO][2025-03-30T14:04:12.659Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:04:12.662Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:04:13.690Z]   点击了Embed按钮
+[INFO][2025-03-30T14:04:16.719Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/hexa-sort
+[INFO][2025-03-30T14:04:18.725Z] 处理游戏 35/100: https://www.crazygames.com/game/miniblox
+[INFO][2025-03-30T14:04:27.543Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:04:27.546Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:04:28.560Z]   点击了Embed按钮
+[INFO][2025-03-30T14:04:31.604Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/miniblox
+[INFO][2025-03-30T14:04:33.614Z] 已保存 35 个游戏数据
+[INFO][2025-03-30T14:04:33.615Z] 处理游戏 36/100: https://www.crazygames.com/game/traffic-rider-vvq
+[INFO][2025-03-30T14:04:46.723Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:04:46.725Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:04:47.741Z]   点击了Embed按钮
+[INFO][2025-03-30T14:04:50.782Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/traffic-rider-vvq
+[INFO][2025-03-30T14:04:52.791Z] 处理游戏 37/100: https://www.crazygames.com/game/racing-limits
+[INFO][2025-03-30T14:05:04.750Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:05:04.753Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:05:05.771Z]   点击了Embed按钮
+[INFO][2025-03-30T14:05:08.803Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/racing-limits
+[INFO][2025-03-30T14:05:10.819Z] 处理游戏 38/100: https://www.crazygames.com/game/piles-of-mahjong-jhb
+[INFO][2025-03-30T14:05:20.607Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:05:20.609Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:05:21.628Z]   点击了Embed按钮
+[INFO][2025-03-30T14:05:24.667Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/piles-of-mahjong-jhb
+[INFO][2025-03-30T14:05:26.679Z] 处理游戏 39/100: https://www.crazygames.com/game/bullet-force-multiplayer
+[INFO][2025-03-30T14:05:38.168Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:05:38.171Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:05:39.197Z]   点击了Embed按钮
+[INFO][2025-03-30T14:05:42.227Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/bullet-force-multiplayer
+[INFO][2025-03-30T14:05:44.231Z] 处理游戏 40/100: https://www.crazygames.com/game/shellshockersio
+[INFO][2025-03-30T14:05:55.977Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:05:55.980Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:05:56.995Z]   点击了Embed按钮
+[INFO][2025-03-30T14:06:00.018Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/shellshockersio
+[INFO][2025-03-30T14:06:02.034Z] 已保存 40 个游戏数据
+[INFO][2025-03-30T14:06:02.034Z] 处理游戏 41/100: https://www.crazygames.com/game/deadshot-io
+[INFO][2025-03-30T14:06:15.170Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:06:15.207Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:06:16.236Z]   点击了Embed按钮
+[INFO][2025-03-30T14:06:19.268Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/deadshot-io
+[INFO][2025-03-30T14:06:21.270Z] 处理游戏 42/100: https://www.crazygames.com/game/word-wipe
+[INFO][2025-03-30T14:06:43.164Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:06:43.168Z]   未找到Embed按钮
+[INFO][2025-03-30T14:06:43.169Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/word-wipe
+[INFO][2025-03-30T14:06:45.176Z] 处理游戏 43/100: https://www.crazygames.com/game/smash-karts
+[INFO][2025-03-30T14:07:00.592Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:07:00.596Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:07:01.620Z]   点击了Embed按钮
+[INFO][2025-03-30T14:07:04.658Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/smash-karts
+[INFO][2025-03-30T14:07:06.671Z] 处理游戏 44/100: https://www.crazygames.com/game/guess-their-answer
+[INFO][2025-03-30T14:07:20.093Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:07:20.096Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:07:21.112Z]   点击了Embed按钮
+[INFO][2025-03-30T14:07:24.150Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/guess-their-answer
+[INFO][2025-03-30T14:07:26.163Z] 处理游戏 45/100: https://www.crazygames.com/game/corn-tycoon
+[INFO][2025-03-30T14:07:38.132Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:07:38.134Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:07:39.150Z]   点击了Embed按钮
+[INFO][2025-03-30T14:07:42.185Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/corn-tycoon
+[INFO][2025-03-30T14:07:44.195Z] 已保存 45 个游戏数据
+[INFO][2025-03-30T14:07:44.196Z] 处理游戏 46/100: https://www.crazygames.com/game/skillwarz
+[INFO][2025-03-30T14:07:53.733Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:07:53.737Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:07:54.766Z]   点击了Embed按钮
+[INFO][2025-03-30T14:07:57.796Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/skillwarz
+[INFO][2025-03-30T14:07:59.809Z] 处理游戏 47/100: https://www.crazygames.com/game/hidden-objects
+[INFO][2025-03-30T14:08:11.835Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:08:11.838Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:08:12.860Z]   点击了Embed按钮
+[INFO][2025-03-30T14:08:15.901Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/hidden-objects
+[INFO][2025-03-30T14:08:17.914Z] 处理游戏 48/100: https://www.crazygames.com/game/fairyland-merge-and-magic
+[INFO][2025-03-30T14:08:28.268Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:08:28.272Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:08:29.293Z]   点击了Embed按钮
+[INFO][2025-03-30T14:08:32.334Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/fairyland-merge-and-magic
+[INFO][2025-03-30T14:08:34.335Z] 处理游戏 49/100: https://www.crazygames.com/game/checkers-draughts-multiplayer
+[INFO][2025-03-30T14:08:46.843Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:08:46.845Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:08:47.865Z]   点击了Embed按钮
+[INFO][2025-03-30T14:08:50.896Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/checkers-draughts-multiplayer
+[INFO][2025-03-30T14:08:52.897Z] 处理游戏 50/100: https://www.crazygames.com/game/apocalypse-reborn-qff
+[INFO][2025-03-30T14:09:04.956Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:09:04.959Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:09:05.982Z]   点击了Embed按钮
+[INFO][2025-03-30T14:09:09.007Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/apocalypse-reborn-qff
+[INFO][2025-03-30T14:09:11.019Z] 已保存 50 个游戏数据
+[INFO][2025-03-30T14:09:11.019Z] 处理游戏 51/100: https://www.crazygames.com/game/girls-nail-salon---nail-games
+[INFO][2025-03-30T14:09:24.376Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:09:24.383Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:09:25.408Z]   点击了Embed按钮
+[INFO][2025-03-30T14:09:28.424Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/girls-nail-salon---nail-games
+[INFO][2025-03-30T14:09:30.436Z] 处理游戏 52/100: https://www.crazygames.com/game/letterclash
+[INFO][2025-03-30T14:09:41.876Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:09:41.882Z]   未找到Embed按钮
+[INFO][2025-03-30T14:09:41.883Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/letterclash
+[INFO][2025-03-30T14:09:43.892Z] 处理游戏 53/100: https://www.crazygames.com/game/penguin-restaurant-mge
+[INFO][2025-03-30T14:09:57.504Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:09:57.509Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:09:58.536Z]   点击了Embed按钮
+[INFO][2025-03-30T14:10:01.572Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/penguin-restaurant-mge
+[INFO][2025-03-30T14:10:03.579Z] 处理游戏 54/100: https://www.crazygames.com/game/fashion-week-2025
+[INFO][2025-03-30T14:10:14.637Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:10:14.641Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:10:15.659Z]   点击了Embed按钮
+[INFO][2025-03-30T14:10:18.683Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/fashion-week-2025
+[INFO][2025-03-30T14:10:20.686Z] 处理游戏 55/100: https://www.crazygames.com/game/rpg-idle-clicker-uzz
+[INFO][2025-03-30T14:10:31.690Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:10:31.695Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:10:32.720Z]   点击了Embed按钮
+[INFO][2025-03-30T14:10:35.744Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/rpg-idle-clicker-uzz
+[INFO][2025-03-30T14:10:37.751Z] 已保存 55 个游戏数据
+[INFO][2025-03-30T14:10:37.751Z] 处理游戏 56/100: https://www.crazygames.com/game/cut-in-half-please
+[INFO][2025-03-30T14:10:52.542Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:10:52.545Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:10:53.555Z]   点击了Embed按钮
+[INFO][2025-03-30T14:10:56.582Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/cut-in-half-please
+[INFO][2025-03-30T14:10:58.585Z] 处理游戏 57/100: https://www.crazygames.com/game/block-legends
+[INFO][2025-03-30T14:11:09.514Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:11:09.519Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:11:10.540Z]   点击了Embed按钮
+[INFO][2025-03-30T14:11:13.593Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/block-legends
+[INFO][2025-03-30T14:11:15.610Z] 处理游戏 58/100: https://www.crazygames.com/game/worldguessr
+[INFO][2025-03-30T14:11:28.377Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:11:28.381Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:11:29.405Z]   点击了Embed按钮
+[INFO][2025-03-30T14:11:32.432Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/worldguessr
+[INFO][2025-03-30T14:11:34.433Z] 处理游戏 59/100: https://www.crazygames.com/game/demolition-derby-3
+[INFO][2025-03-30T14:11:45.380Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:11:45.382Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:11:46.410Z]   点击了Embed按钮
+[INFO][2025-03-30T14:11:49.432Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/demolition-derby-3
+[INFO][2025-03-30T14:11:51.439Z] 处理游戏 60/100: https://www.crazygames.com/game/ships-3d
+[INFO][2025-03-30T14:12:04.788Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:12:04.796Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:12:05.816Z]   点击了Embed按钮
+[INFO][2025-03-30T14:12:08.855Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/ships-3d
+[INFO][2025-03-30T14:12:10.860Z] 已保存 60 个游戏数据
+[INFO][2025-03-30T14:12:10.861Z] 处理游戏 61/100: https://www.crazygames.com/game/snake-shooter-cbu
+[INFO][2025-03-30T14:12:21.966Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:12:21.968Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:12:22.991Z]   点击了Embed按钮
+[INFO][2025-03-30T14:12:26.014Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/snake-shooter-cbu
+[INFO][2025-03-30T14:12:28.020Z] 处理游戏 62/100: https://www.crazygames.com/game/man-runner-2048
+[INFO][2025-03-30T14:12:40.482Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:12:40.485Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:12:41.508Z]   点击了Embed按钮
+[INFO][2025-03-30T14:12:44.545Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/man-runner-2048
+[INFO][2025-03-30T14:12:46.554Z] 处理游戏 63/100: https://www.crazygames.com/game/country-life-meadows
+[INFO][2025-03-30T14:13:00.005Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:13:00.008Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:13:01.028Z]   点击了Embed按钮
+[INFO][2025-03-30T14:13:04.044Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/country-life-meadows
+[INFO][2025-03-30T14:13:06.046Z] 处理游戏 64/100: https://www.crazygames.com/game/kour-io
+[INFO][2025-03-30T14:13:18.051Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:13:18.060Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:13:19.093Z]   点击了Embed按钮
+[INFO][2025-03-30T14:13:22.127Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/kour-io
+[INFO][2025-03-30T14:13:24.144Z] 处理游戏 65/100: https://www.crazygames.com/game/paper-io-2
+[INFO][2025-03-30T14:13:36.074Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:13:36.078Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:13:37.100Z]   点击了Embed按钮
+[INFO][2025-03-30T14:13:40.122Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/paper-io-2
+[INFO][2025-03-30T14:13:42.138Z] 已保存 65 个游戏数据
+[INFO][2025-03-30T14:13:42.139Z] 处理游戏 66/100: https://www.crazygames.com/game/gulper-io
+[INFO][2025-03-30T14:13:55.987Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:13:55.997Z]   未找到Embed按钮
+[INFO][2025-03-30T14:13:55.998Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/gulper-io
+[INFO][2025-03-30T14:13:58.005Z] 处理游戏 67/100: https://www.crazygames.com/game/pixel-warfare
+[INFO][2025-03-30T14:14:07.689Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:14:07.693Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:14:08.719Z]   点击了Embed按钮
+[INFO][2025-03-30T14:14:11.753Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/pixel-warfare
+[INFO][2025-03-30T14:14:13.767Z] 处理游戏 68/100: https://www.crazygames.com/game/mx-offroad-master
+[INFO][2025-03-30T14:14:23.601Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:14:23.604Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:14:24.627Z]   点击了Embed按钮
+[INFO][2025-03-30T14:14:27.662Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/mx-offroad-master
+[INFO][2025-03-30T14:14:29.666Z] 处理游戏 69/100: https://www.crazygames.com/game/polytrack
+[INFO][2025-03-30T14:14:43.208Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:14:43.212Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:14:44.235Z]   点击了Embed按钮
+[INFO][2025-03-30T14:14:47.266Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/polytrack
+[INFO][2025-03-30T14:14:49.268Z] 处理游戏 70/100: https://www.crazygames.com/game/night-city-racing
+[INFO][2025-03-30T14:14:59.589Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:14:59.595Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:15:00.615Z]   点击了Embed按钮
+[INFO][2025-03-30T14:15:03.644Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/night-city-racing
+[INFO][2025-03-30T14:15:05.652Z] 已保存 70 个游戏数据
+[INFO][2025-03-30T14:15:05.652Z] 处理游戏 71/100: https://www.crazygames.com/game/rally-racer-dirt
+[INFO][2025-03-30T14:15:15.411Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:15:15.416Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:15:16.431Z]   点击了Embed按钮
+[INFO][2025-03-30T14:15:19.461Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/rally-racer-dirt
+[INFO][2025-03-30T14:15:21.475Z] 处理游戏 72/100: https://www.crazygames.com/game/super-bike-the-champion
+[INFO][2025-03-30T14:15:33.395Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:15:33.399Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:15:34.417Z]   点击了Embed按钮
+[INFO][2025-03-30T14:15:37.442Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/super-bike-the-champion
+[INFO][2025-03-30T14:15:39.448Z] 处理游戏 73/100: https://www.crazygames.com/game/mr-racer---car-racing
+[INFO][2025-03-30T14:15:49.952Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:15:49.956Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:15:50.977Z]   点击了Embed按钮
+[INFO][2025-03-30T14:15:54.003Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/mr-racer---car-racing
+[INFO][2025-03-30T14:15:56.009Z] 处理游戏 74/100: https://www.crazygames.com/game/stunt-paradise
+[INFO][2025-03-30T14:16:12.382Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:16:12.387Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:16:13.412Z]   点击了Embed按钮
+[INFO][2025-03-30T14:16:16.435Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/stunt-paradise
+[INFO][2025-03-30T14:16:18.446Z] 处理游戏 75/100: https://www.crazygames.com/game/sandbox-city---cars-zombies-ragdolls
+[INFO][2025-03-30T14:16:27.792Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:16:27.795Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:16:28.813Z]   点击了Embed按钮
+[INFO][2025-03-30T14:16:31.851Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/sandbox-city---cars-zombies-ragdolls
+[INFO][2025-03-30T14:16:33.854Z] 已保存 75 个游戏数据
+[INFO][2025-03-30T14:16:33.855Z] 处理游戏 76/100: https://www.crazygames.com/game/stickman-clash
+[INFO][2025-03-30T14:16:43.414Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:16:43.420Z]   未找到Embed按钮
+[INFO][2025-03-30T14:16:43.420Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/stickman-clash
+[INFO][2025-03-30T14:16:45.435Z] 处理游戏 77/100: https://www.crazygames.com/game/defender-idle-2
+[INFO][2025-03-30T14:16:58.702Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:16:58.706Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:16:59.732Z]   点击了Embed按钮
+[INFO][2025-03-30T14:17:02.751Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/defender-idle-2
+[INFO][2025-03-30T14:17:04.757Z] 处理游戏 78/100: https://www.crazygames.com/game/stickman-destruction-3-heroes
+[INFO][2025-03-30T14:17:15.128Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:17:15.134Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:17:16.158Z]   点击了Embed按钮
+[INFO][2025-03-30T14:17:19.181Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/stickman-destruction-3-heroes
+[INFO][2025-03-30T14:17:21.195Z] 处理游戏 79/100: https://www.crazygames.com/game/bank-heist
+[INFO][2025-03-30T14:17:34.203Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:17:34.206Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:17:35.228Z]   点击了Embed按钮
+[INFO][2025-03-30T14:17:38.262Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/bank-heist
+[INFO][2025-03-30T14:17:40.268Z] 处理游戏 80/100: https://www.crazygames.com/game/world-z-defense---zombie-defense
+[INFO][2025-03-30T14:17:50.506Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:17:50.510Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:17:51.536Z]   点击了Embed按钮
+[INFO][2025-03-30T14:17:54.564Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/world-z-defense---zombie-defense
+[INFO][2025-03-30T14:17:56.579Z] 已保存 80 个游戏数据
+[INFO][2025-03-30T14:17:56.580Z] 处理游戏 81/100: https://www.crazygames.com/game/cat-and-granny-original
+[INFO][2025-03-30T14:18:16.274Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:18:16.281Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:18:17.296Z]   点击了Embed按钮
+[INFO][2025-03-30T14:18:20.308Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/cat-and-granny-original
+[INFO][2025-03-30T14:18:22.324Z] 处理游戏 82/100: https://www.crazygames.com/game/k-sniper-challenge-3d
+[INFO][2025-03-30T14:18:37.718Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:18:37.724Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:18:38.745Z]   点击了Embed按钮
+[INFO][2025-03-30T14:18:41.785Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/k-sniper-challenge-3d
+[INFO][2025-03-30T14:18:43.797Z] 处理游戏 83/100: https://www.crazygames.com/game/autogun-heroes-izk
+[INFO][2025-03-30T14:18:56.155Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:18:56.161Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:18:57.194Z]   点击了Embed按钮
+[INFO][2025-03-30T14:19:00.235Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/autogun-heroes-izk
+[INFO][2025-03-30T14:19:02.237Z] 处理游戏 84/100: https://www.crazygames.com/game/puppet-fighter-2-player
+[INFO][2025-03-30T14:19:16.697Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:19:16.701Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:19:17.727Z]   点击了Embed按钮
+[INFO][2025-03-30T14:19:20.756Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/puppet-fighter-2-player
+[INFO][2025-03-30T14:19:22.765Z] 处理游戏 85/100: https://www.crazygames.com/game/basketball-superstars
+[INFO][2025-03-30T14:19:35.423Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:19:35.427Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:19:36.454Z]   点击了Embed按钮
+[INFO][2025-03-30T14:19:39.481Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/basketball-superstars
+[INFO][2025-03-30T14:19:41.483Z] 已保存 85 个游戏数据
+[INFO][2025-03-30T14:19:41.484Z] 处理游戏 86/100: https://www.crazygames.com/game/golf-orbit
+[INFO][2025-03-30T14:19:53.075Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:19:53.081Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:19:54.106Z]   点击了Embed按钮
+[INFO][2025-03-30T14:19:57.140Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/golf-orbit
+[INFO][2025-03-30T14:19:59.147Z] 处理游戏 87/100: https://www.crazygames.com/game/basketball-stars-2019
+[INFO][2025-03-30T14:20:11.720Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:20:11.727Z]   未找到Embed按钮
+[INFO][2025-03-30T14:20:11.727Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/basketball-stars-2019
+[INFO][2025-03-30T14:20:13.740Z] 处理游戏 88/100: https://www.crazygames.com/game/8-ball-pool-billiards-multiplayer
+[INFO][2025-03-30T14:20:23.354Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:20:23.359Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:20:24.384Z]   点击了Embed按钮
+[INFO][2025-03-30T14:20:27.416Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/8-ball-pool-billiards-multiplayer
+[INFO][2025-03-30T14:20:29.418Z] 处理游戏 89/100: https://www.crazygames.com/game/basket-random
+[INFO][2025-03-30T14:20:40.028Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:20:40.032Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:20:41.061Z]   点击了Embed按钮
+[INFO][2025-03-30T14:20:44.096Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/basket-random
+[INFO][2025-03-30T14:20:46.113Z] 处理游戏 90/100: https://www.crazygames.com/game/qb-legend
+[INFO][2025-03-30T14:20:58.353Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:20:58.360Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:20:59.380Z]   点击了Embed按钮
+[INFO][2025-03-30T14:21:02.421Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/qb-legend
+[INFO][2025-03-30T14:21:04.426Z] 已保存 90 个游戏数据
+[INFO][2025-03-30T14:21:04.427Z] 处理游戏 91/100: https://www.crazygames.com/game/tap-tap-shots
+[INFO][2025-03-30T14:21:17.130Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:21:17.132Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:21:18.162Z]   点击了Embed按钮
+[INFO][2025-03-30T14:21:21.181Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/tap-tap-shots
+[INFO][2025-03-30T14:21:23.188Z] 处理游戏 92/100: https://www.crazygames.com/game/soccer-legends-2021
+[INFO][2025-03-30T14:21:36.715Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:21:36.722Z]   未找到Embed按钮
+[INFO][2025-03-30T14:21:36.722Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/soccer-legends-2021
+[INFO][2025-03-30T14:21:38.723Z] 处理游戏 93/100: https://www.crazygames.com/game/bodycamera-shooter
+[INFO][2025-03-30T14:21:48.931Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:21:48.938Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:21:49.962Z]   点击了Embed按钮
+[INFO][2025-03-30T14:21:52.990Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/bodycamera-shooter
+[INFO][2025-03-30T14:21:54.992Z] 处理游戏 94/100: https://www.crazygames.com/game/forward-assault
+[INFO][2025-03-30T14:22:05.959Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:22:05.965Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:22:06.988Z]   点击了Embed按钮
+[INFO][2025-03-30T14:22:10.024Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/forward-assault
+[INFO][2025-03-30T14:22:12.027Z] 处理游戏 95/100: https://www.crazygames.com/game/bot-machines
+[INFO][2025-03-30T14:22:24.172Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:22:24.175Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:22:25.199Z]   点击了Embed按钮
+[INFO][2025-03-30T14:22:28.220Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/bot-machines
+[INFO][2025-03-30T14:22:30.229Z] 已保存 95 个游戏数据
+[INFO][2025-03-30T14:22:30.230Z] 处理游戏 96/100: https://www.crazygames.com/game/sniper-shot-bullet-time
+[INFO][2025-03-30T14:22:41.395Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:22:41.401Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:22:42.426Z]   点击了Embed按钮
+[INFO][2025-03-30T14:22:45.464Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/sniper-shot-bullet-time
+[INFO][2025-03-30T14:22:47.478Z] 处理游戏 97/100: https://www.crazygames.com/game/time-shooter-2
+[INFO][2025-03-30T14:22:56.688Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:22:56.695Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:22:57.714Z]   点击了Embed按钮
+[INFO][2025-03-30T14:23:00.746Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/time-shooter-2
+[INFO][2025-03-30T14:23:02.753Z] 处理游戏 98/100: https://www.crazygames.com/game/downtown-1930s-mafia
+[INFO][2025-03-30T14:23:15.345Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:23:15.348Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:23:16.373Z]   点击了Embed按钮
+[INFO][2025-03-30T14:23:19.400Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/downtown-1930s-mafia
+[INFO][2025-03-30T14:23:21.408Z] 处理游戏 99/100: https://www.crazygames.com/game/block-wall-destroyer
+[INFO][2025-03-30T14:23:32.124Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:23:32.129Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:23:33.151Z]   点击了Embed按钮
+[INFO][2025-03-30T14:23:36.205Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/block-wall-destroyer
+[INFO][2025-03-30T14:23:38.218Z] 处理游戏 100/100: https://www.crazygames.com/game/leek-factory-tycoon
+[INFO][2025-03-30T14:23:48.489Z]   尝试查找Embed按钮...
+[INFO][2025-03-30T14:23:48.497Z]   找到Embed按钮，位置: x=276.03515625, y=337.859375
+[INFO][2025-03-30T14:23:49.521Z]   点击了Embed按钮
+[INFO][2025-03-30T14:23:52.557Z]   构建正确格式的iframe源: https://www.crazygames.com/embed/leek-factory-tycoon
+[INFO][2025-03-30T14:23:54.561Z] 已保存 100 个游戏数据
+[INFO][2025-03-30T14:23:54.562Z] 完成! 已抓取 100 个游戏，结果保存到 D:\projects\游戏站\yourlair.online\yourlair-importer\data\crazygames-list.json
+[INFO][2025-03-30T14:23:54.563Z] 请使用筛选工具来选择要导入的游戏
